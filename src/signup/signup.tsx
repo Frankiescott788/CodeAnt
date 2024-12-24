@@ -62,9 +62,9 @@ export default function Signup(): ReactElement {
                                                 <div className={"mt-1"}>
                                                     <div className={"flex gap-2"}>
                                                         <div>
-                                                            <ArrowUp size={"15"}/>
+                                                            <ArrowUp size={"15"} color={"#0049C6"}/>
                                                         </div>
-                                                        <p className={"text-tiny font-bold"}>14 %</p>
+                                                        <p className={"text-tiny font-bold text-[#0049C6]"}>14 %</p>
                                                     </div>
                                                     <p className={"text-tiny text-center font-bold"}>This week</p>
                                                 </div>
@@ -122,21 +122,21 @@ export default function Signup(): ReactElement {
                                                 onClick={() => navigate("/dashboard")}
                                             >
                                                 <Image src={Bitbucket} className={"h-8 w-8"}/>
-                                                <p className={"mt-1"}>Sign in with Github</p>
+                                                <p className={"mt-1"}>Sign in with Bitbucket</p>
                                             </div>
                                             <div
                                                 className={"flex justify-center gap-2 border-2 px-3 lg:px-[7rem] py-3 lg:py-2 rounded-lg  "}
                                                 onClick={() => navigate("/dashboard")}
                                             >
                                                 <Image src={Azure} className={"h-8 w-8"}/>
-                                                <p className={"mt-1"}>Sign in with Github</p>
+                                                <p className={"mt-1"}>Sign in with Azure Devops</p>
                                             </div>
                                             <div
                                                 className={"flex justify-center gap-2 border-2 px-3 lg:px-[7rem] py-3 lg:py-2 rounded-lg  "}
                                                 onClick={() => navigate("/dashboard")}
                                             >
                                                 <Image src={Gitlab} className={"h-8 w-8"}/>
-                                                <p className={"mt-1"}>Sign in with Github</p>
+                                                <p className={"mt-1"}>Sign in with GitLab</p>
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +151,7 @@ export default function Signup(): ReactElement {
                                                 onClick={() => navigate("/dashboard")}
                                             >
                                                 <Image src={Gitlab} className={"h-8 w-8"}/>
-                                                <p className={"mt-1"}>Sign in with Github</p>
+                                                <p className={"mt-1"}>Sign in with GitLab</p>
                                             </div>
                                             <div
                                                 className={"flex justify-center gap-2 border-2 px-3 lg:px-[7rem] py-3 lg:py-2 rounded-lg  "}

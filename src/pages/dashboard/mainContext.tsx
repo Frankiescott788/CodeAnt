@@ -1,4 +1,4 @@
-import {Button, Divider, Input, Chip} from "@nextui-org/react";
+import {Button, Divider, Input} from "@nextui-org/react";
 import {Add, Refresh} from "iconsax-react";
 import {Repos} from "../../data/repos";
 import {useState} from "react";
@@ -15,7 +15,7 @@ export default function MainContent() {
                 <div className="lg:flex justify-between px-4 lg:px-4">
                     <div>
                         <p className="text-2xl">Repositories</p>
-                        <p className="text-sm">33 total repositories</p>
+                        <p className="text-sm">{Repos.length} total repositories</p>
                     </div>
                     <div className="flex gap-3 pt-3">
                         <Button className="flex" variant="bordered">
@@ -58,8 +58,8 @@ export default function MainContent() {
                             <div className={"p-4 "} key={i}>
                                 <div className={"flex gap-2"}>
                                     <p className={"text-lg"}>{repo.name}</p>
-                                    <Chip content={"Public"} color={"primary"} variant="flat" size={"sm"}
-                                          className={"mt-1"}>{repo.view}</Chip>
+                                    <div
+                                          className={"mt-1 bg-[#EFF8FF] text-sm rounded-full px-1 pt-[2px] text-[#175CD3] border-1 border-[#B2DDFF]"}>{repo.view}</div>
                                 </div>
                                 <div className={"flex gap-7 pt-3"}>
                                     <div className={"flex gap-2"}>
