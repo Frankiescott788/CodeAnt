@@ -9,6 +9,8 @@
 - `src/`
   - `components/`: Contains reusable React components.
   - `pages/`: Contains page components for different routes.
+  - `data/`: Contains a list of repos.
+  - `assets/`: Contains assets such as pictures and icons.
   - `App.tsx`: Main application component.
   - `main.tsx`: Entry point of the application.
 
